@@ -1,0 +1,14 @@
+{
+  "name": "dw-preentrega",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso de Desarrollo Web de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map" 
+  },
+  "author": "Leandro Delgado",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

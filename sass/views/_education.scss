@@ -1,0 +1,49 @@
+// EDUCATION
+
+.education {
+    @include default;
+
+    h1 {
+        color: $primary;
+        text-align: center;
+        font-size: 40px;
+        padding: 40px;
+        border-bottom: 2px solid #fff4;
+    }
+}
+
+.education-counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .box {
+        width: 300px;
+        background: #222;
+        text-align: center;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 50px;
+        box-shadow: $boxShadow;
+
+        span {
+            font-size: 35px;
+            padding-left: 10px;
+            color: $text;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: $text;
+            padding: 20px;
+        }
+
+        i {
+            font-size: 30px;
+            text-align: center;
+            color: $primary;
+        }
+    }
+}
+
+// END-EDUCATION

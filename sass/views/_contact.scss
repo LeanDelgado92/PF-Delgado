@@ -1,0 +1,139 @@
+/* CONTACT */
+
+.contact {
+    @include default;
+}
+
+.contact-title h1 {
+    color: $primary;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+    border-bottom: 2px solid #fff4;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: none;
+
+    .content {
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    form {
+        flex: 10px 20px;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 20px;
+
+        .box {
+        padding: 10px;
+        margin: 20px 0;
+        background: $fondo;
+        color: $primary;
+        text-transform: none;
+        font-size: 20px;
+        width: 100%;
+
+        &::placeholder {
+            text-transform: capitalize;
+        }
+
+        &:focus{
+            color: $primary;
+            background-color: $fondo;
+            outline-color: $primary;
+            box-shadow: $boxShadow;
+            transition: .1s;
+            transition-property: box-shadow;
+        }
+        }
+
+        .massage {
+            height: 100px;
+            resize: none;
+        }
+    }
+
+    .content {
+        .title {
+            padding-bottom: 50px;
+            text-transform: uppercase;
+            color: $primary;
+            font-size: 35px;
+        }
+
+        .info h3 {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            color: $text;
+            padding: 10px 0;
+            font-weight: normal;
+
+            i {
+            padding-right: 30px;
+            color: $primary;
+            }
+        }
+    }
+}
+
+.btn-contact {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 48px;
+    border-radius: 40px;
+    font-size: 19px;
+    color: $text;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, $primary, #c0bfbf, $primary);
+        background-size: 200%;
+        background-position: 0 0;
+        z-index: -1;
+        border-radius: 40px;
+        filter: blur(5px);
+        transition: .5s ease;
+    }
+
+    &:hover:before {
+        background-position: 100% 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, $primary, #c0bfbf, $primary);
+        background-size: 200%;
+        background-position: 0 0;
+        z-index: -1;
+        border-radius: 40px;
+        transition: .5s ease;
+    }
+
+    &:hover:after {
+        background-position: 100% 0;
+    }
+}
+
+/* END CONTACT */

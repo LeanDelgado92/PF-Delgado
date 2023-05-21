@@ -1,0 +1,82 @@
+// ABOUT
+
+.row {
+    @include default;
+}
+
+.info {
+    h1 {
+        color: $primary;
+        text-align: center;
+        font-size: 40px;
+        padding: 40px;
+        border-bottom: 2px solid #fff4;
+    }
+
+    p {
+        font-size: 20px;
+        color: $text;
+        padding: 50px 30px;
+    }
+}
+
+.counter {
+    flex: 25 25 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    .box {
+        width: 350px;
+        background: #222;
+        text-align: center;
+        border-radius: 25px;
+        padding: 70px;
+        margin: 40px;
+        box-shadow: $boxShadow;
+        
+
+    span {
+        font-size: 50px;
+        color: $primary;
+    }
+
+    h3 {
+        font-size: 25px;
+        color: $text;
+    }
+    }
+}
+
+/* END ABOUT */
+
+
+
+
+// MEDIAQUERY
+
+@media (min-width: $bpSmall) and (max-width: $bpLarge) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .info {
+        padding: 40px;
+    
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            border-bottom: 3px solid #c0bfbf;
+        }
+
+        p {
+            font-size: 30px;
+            padding: 60 40px;
+        }
+    }
+}

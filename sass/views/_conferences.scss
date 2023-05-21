@@ -1,0 +1,138 @@
+// CONFERENCES
+
+.conferences {
+    @include default;
+}
+
+.conferences-info {
+    h1 {
+        color: $primary;
+        text-align: center;
+        font-size: 40px;
+        padding: 40px;
+        border-bottom: 2px solid #fff4;
+    }
+
+    p {
+        font-size: 20px;
+        color: $text;
+        padding: 50px 30px;
+    }
+}
+
+.conferences-bottom {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 1px;
+}
+
+.conferences-item {
+    flex-basis: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: url(/assets/images/img3.png);
+    background-size: cover;
+    margin: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient($primary 0%, $secondary 100%);
+        opacity: .8;
+        z-index: -1;
+    }
+}
+
+.conferences-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.conferences-item {
+    h2 {
+        font-size: 30px;
+        color: $text;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $text;
+        text-align: left;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+// END-CONFERENCES
+
+
+
+
+// MEDIAQUERY
+
+@media (min-width: $bpSmall) and (max-width: $bpLarge) {
+    .conferences {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .conferences-info {
+        padding: 40px;
+    
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            border-bottom: 3px solid #c0bfbf;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .conferences-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        .icon img {
+            height: 90px;
+            width: 90px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 30px;
+            padding: 80 60px;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
