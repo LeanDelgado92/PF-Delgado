@@ -1,4 +1,4 @@
-/* CONTACT */
+// CONTACT
 
 .contact {
     @include default;
@@ -104,7 +104,7 @@
         top: 0;
         left: 0;
         inset: 0;
-        background: linear-gradient(45deg, $primary, #c0bfbf, $primary);
+        background: linear-gradient(45deg, $primary, $secondary, $primary);
         background-size: 200%;
         background-position: 0 0;
         z-index: -1;
@@ -123,7 +123,7 @@
         top: 0;
         left: 0;
         inset: 0;
-        background: linear-gradient(45deg, $primary, #c0bfbf, $primary);
+        background: linear-gradient(45deg, $primary, $secondary, $primary);
         background-size: 200%;
         background-position: 0 0;
         z-index: -1;
@@ -136,4 +136,4 @@
     }
 }
 
-/* END CONTACT */
+// END CONTACT 
