@@ -99,7 +99,7 @@ body {
 }
 
 /* MEDIA QUERY */
-@media (min-width: 320px) and (max-width: 950px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   /* HEADER */
   .header {
     display: flex;
@@ -107,9 +107,6 @@ body {
   }
   .nav-item a {
     display: none;
-  }
-  .header-container-navbar li {
-    margin: 0 15px;
   }
   .navbar-toggler-icon {
     display: flex;
@@ -309,7 +306,7 @@ footer {
   object-fit: cover;
 }
 
-@media (min-width: 320px) and (max-width: 950px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -350,9 +347,9 @@ footer {
     border-radius: 50%;
   }
   .hero-sci a {
-    width: 120px;
-    height: 120px;
-    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }
 .row {
@@ -403,7 +400,7 @@ footer {
 }
 
 /* END ABOUT */
-@media (min-width: 320px) and (max-width: 950px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -549,7 +546,7 @@ footer {
   line-height: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 950px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   .conferences {
     display: flex;
     flex-direction: column;
@@ -587,7 +584,6 @@ footer {
     text-align: center;
   }
 }
-/* CONTACT */
 .contact {
   max-width: 1280px;
   margin: 0 auto;
@@ -714,5 +710,3 @@ footer {
 .btn-contact:hover:after {
   background-position: 100% 0;
 }
-
-/* END CONTACT */
