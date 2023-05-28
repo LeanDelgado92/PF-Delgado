@@ -86,12 +86,12 @@
         width: 100%;
     }
 
-    .header-container a img {
-        width: 30%;
-    }
-
     .nav-item a {
         display: none;
+    }
+
+    .header-container-navbar li {
+        margin: 0 15px;
     }
 
     .navbar-toggler-icon {
