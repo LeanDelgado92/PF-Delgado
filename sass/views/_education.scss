@@ -47,3 +47,29 @@
 }
 
 // END-EDUCATION
+
+// MEDIAQUERY
+
+@media (min-width: $bpSmall) and (max-width: $bpLarge){
+    .education {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .education-counter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .box {
+            max-width: 250px;
+        }
+    }
+}

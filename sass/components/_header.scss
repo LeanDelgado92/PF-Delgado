@@ -86,22 +86,32 @@
         width: 100%;
     }
 
+    .header-container { 
+
+        a img {
+            width: 20%;
+        }
+    }
+
     .nav-item a {
         display: none;
     }
 
     .navbar-toggler-icon {
         display: flex;
-        color: #fff;
-        font-size: 50px;
+        background-color: $fondo;
+        color: $primary;
+        font-size: 30px;
     }
 
     .offcanvas {
         display: flex;
+        font-size: 20px;
     }
 
     .offcanvas-body a {
         display: flex;
+        font-size: 20px;
     }
 }
 
