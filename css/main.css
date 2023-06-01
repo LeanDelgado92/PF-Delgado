@@ -505,11 +505,11 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 5px;
   border-radius: 20px;
   background-image: url(/assets/images/img3.png);
   background-size: cover;
-  margin: 20px;
+  margin: 5px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -534,10 +534,9 @@ footer {
 }
 
 .conferences-item h2 {
-  text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .conferences-item p {
@@ -564,7 +563,6 @@ footer {
   }
   .conferences-info p {
     font-size: 30px;
-    padding: 50px 30px;
   }
   .conferences-bottom {
     display: flex;
@@ -584,9 +582,6 @@ footer {
     font-size: 30px;
     padding: 80 60px;
     text-align: center;
-  }
-  .conferences-item p {
-    line-height: 50px;
   }
 }
 .contact {
