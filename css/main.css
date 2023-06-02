@@ -123,7 +123,7 @@ body {
   }
   .offcanvas-body a {
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 footer {
@@ -396,6 +396,7 @@ footer {
 }
 .counter .box:hover {
   transform: translateY(-5px);
+  transition: 1s;
 }
 .counter .box span {
   font-size: 50px;
@@ -458,6 +459,10 @@ footer {
   margin: 50px;
   box-shadow: 5px 3px 9px -4px #d5aeb4, -5px -3px 9px -4px #c0bfbf;
 }
+.education-counter .box:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+}
 .education-counter .box span {
   font-size: 35px;
   padding-left: 10px;
@@ -517,31 +522,51 @@ footer {
   padding: 50px 30px;
 }
 
-.conferences-bottom {
+.conferences-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.conferences-container .conferences-bottom {
   max-width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  margin-top: 1px;
+  padding: 10px;
 }
-
-.conferences-item {
-  flex-basis: 150%;
+.conferences-container .conferences-bottom .conferences-item {
+  flex-basis: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 5px;
+  padding: 20px;
   border-radius: 20px;
   background-image: url(/assets/images/img3.png);
   background-size: cover;
-  margin: 5px;
+  margin: 15px;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-.conferences-item::after {
+.conferences-container .conferences-bottom .conferences-item h2 {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.conferences-container .conferences-bottom .conferences-item p {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 20px;
+}
+.conferences-container .conferences-bottom .conferences-item:hover {
+  transform: translateY(-5px);
+  transition: 1s;
+}
+.conferences-container .conferences-bottom .conferences-item::after {
   content: "";
   position: absolute;
   left: 0;
@@ -552,25 +577,11 @@ footer {
   opacity: 0.8;
   z-index: -1;
 }
-
-.conferences-bottom .icon {
+.conferences-container .conferences-bottom .conferences-item.icon {
   height: 80px;
   width: 80px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.conferences-item h2 {
-  font-size: 30px;
-  color: #fff;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.conferences-item p {
-  color: #fff;
-  text-align: left;
-  font-size: 20px;
-  line-height: 20px;
 }
 
 @media (min-width: 320px) and (max-width: 1280px) {

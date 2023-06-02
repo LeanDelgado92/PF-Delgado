@@ -26,6 +26,11 @@
         margin: 50px;
         box-shadow: $boxShadow;
 
+        &:hover {
+            transform: translateY(-5px);
+            transition: 1s;
+        }
+
         span {
             font-size: 35px;
             padding-left: 10px;

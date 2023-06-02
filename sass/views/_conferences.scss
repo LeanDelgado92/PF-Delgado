@@ -20,63 +20,72 @@
     }
 }
 
-.conferences-bottom {
-    max-width: 1280px;
+.conferences-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    margin-top: 1px;
-}
-
-.conferences-item {
-    flex-basis: 150%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 5px;
-    border-radius: 20px;
-    background-image: url(/assets/images/img3.png);
-    background-size: cover;
-    margin: 5px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    flex-wrap: wrap;
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-image: linear-gradient($primary 0%, $secondary 100%);
-        opacity: .8;
-        z-index: -1;
-    }
-}
+    .conferences-bottom {
+        max-width: 1280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
 
-.conferences-bottom .icon {
-    height: 80px;
-    width: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+        .conferences-item {
+            flex-basis: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 20px;
+            background-image: url(/assets/images/img3.png);
+            background-size: cover;
+            margin: 15px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        
+            h2 {
+                font-size: 25px;
+                color: $text;
+                text-align: center;
+                margin: 20px;
+                text-transform: uppercase;
+            }
+        
+            p {
+                color: $text;
+                text-align: left;
+                font-size: 20px;
+                line-height: 20px;
+            }
+        
+            &:hover {
+                transform: translateY(-5px);
+                transition: 1s;
+            }
+        
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient($primary 0%, $secondary 100%);
+                opacity: .8;
+                z-index: -1;
+            }
 
-.conferences-item {
-    h2 {
-        font-size: 30px;
-        color: $text;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-
-    p {
-        color: $text;
-        text-align: left;
-        font-size: 20px;
-        line-height: 20px;
+        &.icon {
+            height: 80px;
+            width: 80px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        }
     }
 }
 
