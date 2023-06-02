@@ -527,46 +527,41 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
-.conferences-container .conferences-bottom {
-  max-width: 1280px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-.conferences-container .conferences-bottom .conferences-item {
-  flex-basis: 100%;
+.conferences-container .conferences-box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
+  width: 300px;
   background-image: url(/assets/images/img3.png);
   background-size: cover;
-  margin: 15px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 5px 3px 9px -4px #d5aeb4, -5px -3px 9px -4px #c0bfbf;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-.conferences-container .conferences-bottom .conferences-item h2 {
+.conferences-container .conferences-box h2 {
   font-size: 25px;
   color: #fff;
   text-align: center;
   margin: 20px;
   text-transform: uppercase;
 }
-.conferences-container .conferences-bottom .conferences-item p {
+.conferences-container .conferences-box p {
   color: #fff;
   text-align: left;
   font-size: 20px;
   line-height: 20px;
 }
-.conferences-container .conferences-bottom .conferences-item:hover {
+.conferences-container .conferences-box:hover {
   transform: translateY(-5px);
   transition: 1s;
 }
-.conferences-container .conferences-bottom .conferences-item::after {
+.conferences-container .conferences-box::after {
   content: "";
   position: absolute;
   left: 0;
@@ -574,10 +569,10 @@ footer {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#d5aeb4 0%, #c0bfbf 100%);
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: -1;
 }
-.conferences-container .conferences-bottom .conferences-item.icon {
+.conferences-container .conferences-box.icon {
   height: 80px;
   width: 80px;
   margin-top: 20px;
@@ -602,21 +597,21 @@ footer {
   .conferences-info p {
     font-size: 20px;
   }
-  .conferences-bottom {
+  .conferences-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
   }
-  .conferences-bottom .icon img {
+  .conferences-container .icon img {
     height: 70px;
     width: 70px;
   }
-  .conferences-bottom h2 {
+  .conferences-container h2 {
     font-size: 30px;
     text-align: center;
   }
-  .conferences-bottom p {
+  .conferences-container p {
     font-size: 20px;
     padding: 80 60px;
     text-align: center;
