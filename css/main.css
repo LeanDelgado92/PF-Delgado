@@ -396,7 +396,7 @@ footer {
 }
 .counter .box:hover {
   transform: translateY(-5px);
-  transition: 1s;
+  transition: all 0.8s;
 }
 .counter .box span {
   font-size: 50px;
@@ -461,7 +461,7 @@ footer {
 }
 .education-counter .box:hover {
   transform: translateY(-5px);
-  transition: 1s;
+  transition: all 1s;
 }
 .education-counter .box span {
   font-size: 35px;
@@ -559,7 +559,7 @@ footer {
 }
 .conferences-container .conferences-box:hover {
   transform: translateY(-5px);
-  transition: 1s;
+  transition: all 1s;
 }
 .conferences-container .conferences-box::after {
   content: "";
