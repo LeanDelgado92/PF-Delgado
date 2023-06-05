@@ -55,7 +55,7 @@ body {
 
 .offcanvas {
   display: none;
-  background: black;
+  background-color: black;
 }
 .offcanvas h5 {
   color: #d5aeb4;
@@ -119,6 +119,7 @@ body {
   .offcanvas {
     display: flex;
     font-size: 20px;
+    background-color: black;
   }
   .offcanvas-body a {
     display: flex;

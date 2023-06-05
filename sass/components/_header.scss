@@ -21,7 +21,7 @@
 
 .offcanvas {
     display: none;
-    background: $fondo;
+    background-color: $fondo;
 
     h5 {
         color: $primary;
@@ -85,7 +85,7 @@
     }
 
     .header-container { 
-         a img {
+        a img {
             width: 20%;
         }
     }
@@ -103,6 +103,7 @@
     .offcanvas {
         display: flex;
         font-size: 20px;
+        background-color: $fondo;
     }
 
     .offcanvas-body a {
