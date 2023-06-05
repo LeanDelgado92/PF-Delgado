@@ -21,7 +21,7 @@
 
 .offcanvas {
     display: none;
-    background: #222;
+    background: $fondo;
 
     h5 {
         color: $primary;
@@ -85,8 +85,7 @@
     }
 
     .header-container { 
-
-        a img {
+         a img {
             width: 20%;
         }
     }
@@ -97,7 +96,6 @@
 
     .navbar-toggler-icon {
         display: flex;
-        background-color: $fondo;
         color: $primary;
         font-size: 30px;
     }
