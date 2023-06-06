@@ -161,6 +161,7 @@ footer {
 }
 .hero-content p {
   font-size: 20px;
+  text-align: justify;
   margin: 20px 0 40px;
 }
 
@@ -332,6 +333,7 @@ footer {
   .hero-content p {
     font-size: 20px;
     padding: 40px 20px;
+    text-align: center;
   }
   .btn-hero {
     margin-bottom: 0;
@@ -375,6 +377,7 @@ footer {
 }
 .info p {
   font-size: 20px;
+  text-align: justify;
   color: #fff;
   padding: 50px 30px;
 }
@@ -426,6 +429,7 @@ footer {
   .info p {
     font-size: 20px;
     padding: 40 20px;
+    text-align: left;
   }
 }
 .education {
@@ -544,6 +548,12 @@ footer {
   z-index: 1;
   overflow: hidden;
 }
+.conferences-container .conferences-box h1 {
+  font-size: 25px;
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+}
 .conferences-container .conferences-box h2 {
   font-size: 25px;
   color: #fff;
@@ -569,7 +579,7 @@ footer {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(#d5aeb4 0%, #c0bfbf 100%);
-  opacity: 0.7;
+  opacity: 0.8;
   z-index: -1;
 }
 .conferences-container .conferences-box.icon {
